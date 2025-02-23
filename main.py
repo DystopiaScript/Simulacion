@@ -6,13 +6,12 @@ def main():
 
         if opcion == "1":
            menu.opcion_1()
-           break
+           
         elif opcion == "2":
             menu.opcion_2()
-            break
+            
         elif opcion == "3":
             menu.opcion_3()
-            break
         elif opcion == "4":
             print("¡Hasta luego!")
             exit()

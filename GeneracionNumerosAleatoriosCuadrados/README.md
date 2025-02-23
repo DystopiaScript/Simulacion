@@ -1,0 +1,1 @@
+Ejecutar el archivo desde el cmd o el powershell, si se ejecuta desde una consola de python, no se ejecutaran todas las opciones de manera adecuada.

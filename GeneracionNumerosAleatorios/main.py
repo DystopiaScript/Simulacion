@@ -17,7 +17,7 @@ def main():
             exit()
         else:
             print("Opción inválida. Intenta de nuevo.")
-
+    
 if __name__ == "__main__":
     main()
 

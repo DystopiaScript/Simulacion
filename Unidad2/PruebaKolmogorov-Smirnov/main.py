@@ -2,9 +2,12 @@ import numpy as np
 from scipy.stats import kstest
 
 def main():
-    # Generar 100 números aleatorios en el intervalo [0, 1]
-    datos = np.random.rand(100)
-    
+    semilla = int(input("Ingrese la semilla para el generador de números aleatorios: "))
+    n = int(input("Ingrese la cantidad de números aleatorios a generar: "))
+    # Setear la semilla 
+    np.random.seed(semilla)
+    # Generar n números aleatorios 
+    datos = np.random.rand(n)
     # Mostrar los datos generados
     print("Datos generados:")
     print(datos)  # Puedes imprimir el array completo o iterar si prefieres cada valor en una línea

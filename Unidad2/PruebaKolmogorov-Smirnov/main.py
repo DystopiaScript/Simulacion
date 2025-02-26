@@ -1,4 +1,5 @@
 import numpy as np
+import Unidad2.GeneracionCongruenciaLineal as gcl
 from scipy.stats import kstest
 
 def main():

@@ -3,8 +3,8 @@ def congruencial_lineal(seed, a, c, m, n):
     numeros = []
     Xn = seed  # Semilla inicial
     for _ in range(n):
-        Xn = (a * Xn + c) % m
-    #    numeros.append(Xn / m)  # Normalizamos el número generado para que esté en [0, 1)
+        Xn = (a * Xn + c) % m  # Fórmula congruencial
+        numeros.append(Xn)  # Agregar Xn directamente sin normalización
     return numeros
 
 def main():
@@ -24,6 +24,7 @@ def main():
     print("\nTodos los números generados:")
     for numero in numeros_aleatorios:
         print(numero)
+    input("Presiona Enter para salir...")
 
 if __name__ == '__main__':
     main()

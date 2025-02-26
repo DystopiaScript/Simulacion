@@ -6,7 +6,7 @@ resultados = []
 for _ in range(iteraciones):
   #Elevar la semilla al cuadrado
   cuadrado = str(semilla ** 2).zfill(2 * n) #Agregar los espacios necesarios
-  #Extraer los dígitos centraoles 
+  #Extraer los dígitogs centraoles 
   inicio = (len(cuadrado)- n)//2
   semilla=int(cuadrado[inicio:inicio+n])
   resultados.append(semilla)

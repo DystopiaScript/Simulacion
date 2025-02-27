@@ -1,10 +1,9 @@
 import numpy as np
-import Unidad2.GeneracionCongruenciaLineal as gcl
 from scipy.stats import kstest
 
 def main():
-    semilla = int(input("Ingrese la semilla para el generador de números aleatorios: "))
-    n = int(input("Ingrese la cantidad de números aleatorios a generar: "))
+    semilla = 1231  # Semilla para reproducibilidad
+    n = 1000 # Número de datos a generar
     # Setear la semilla 
     np.random.seed(semilla)
     # Generar n números aleatorios 
@@ -25,7 +24,6 @@ def main():
         print("Se rechaza la hipótesis nula: los datos NO siguen una distribución uniforme.")
     else:
         print("No se rechaza la hipótesis nula: los datos podrían seguir una distribución uniforme.")
-    input("Presiona Enter para salir...")
 
 if __name__ == '__main__':
     main()

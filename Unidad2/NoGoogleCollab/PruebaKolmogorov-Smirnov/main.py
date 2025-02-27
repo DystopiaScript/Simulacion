@@ -2,8 +2,8 @@ import numpy as np
 from scipy.stats import kstest
 
 def main():
-    semilla = 1231  # Semilla para reproducibilidad
-    n = 1000 # Número de datos a generar
+   semilla = int(input("Ingrese la semilla para el generador de números aleatorios: "))
+    n = int(input("Ingrese la cantidad de números aleatorios a generar: ")) # Cantidad de números aleatorios a generar
     # Setear la semilla 
     np.random.seed(semilla)
     # Generar n números aleatorios 
